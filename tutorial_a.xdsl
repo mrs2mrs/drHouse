@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<smile version="1.0" id="Unnamed" numsamples="1000" discsamples="10000">
+	<nodes>
+		<cpt id="Flu">
+			<state id="Yes" />
+			<state id="No" />
+			<probabilities>0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="Clap">
+			<state id="Yes" />
+			<state id="No" />
+			<probabilities>0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="Fever">
+			<state id="Yes" />
+			<state id="No" />
+			<parents>Flu Clap</parents>
+			<probabilities>0.98 0.02 0.99 0.01 0.2 0.8 0.01 0.99</probabilities>
+		</cpt>
+		<cpt id="BackPain">
+			<state id="Yes" />
+			<state id="No" />
+			<parents>Flu</parents>
+			<probabilities>0.99 0.01 0.01 0.99</probabilities>
+		</cpt>
+		<cpt id="Sneezing">
+			<state id="Yes" />
+			<state id="No" />
+			<parents>Flu</parents>
+			<probabilities>0.99 0.01 0.01 0.99</probabilities>
+		</cpt>
+	</nodes>
+	<extensions>
+		<genie version="1.0" app="SMILE Mar 21 2013" name="Unnamed" faultnameformat="nodestate">
+			<node id="Flu">
+				<name>Flu</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="Clap">
+				<name>Clap</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="Fever">
+				<name>Fever</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="BackPain">
+				<name>BackPain</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="Sneezing">
+				<name>Sneezing</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+		</genie>
+	</extensions>
+</smile>
